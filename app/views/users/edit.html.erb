@@ -8,8 +8,7 @@
 		<h3><br/>Mise à jour de vos données</h3>
 		<div class="form-row">
 
-		<%= form_for @user_connected, url: {action: "update"}, html: {class: "col-md-6"} do |f| %>
-			
+		<%= form_for @current_user, url: {action: "update"}, html: {class: "col-md-6"} do |f| %>
 			
 			<div class="col-md-12">
 				<div class="form-group">
@@ -34,7 +33,7 @@
 			</div>
 
 			<div class="col-md-12 form-group  text-light">
-				<%= f.submit "Update", class: "form-control btn btn-outline-success bg-info align-items-stretch	text-light" %>
+				<%= f.submit "Mettre à jour", class: "form-control btn btn-outline-success bg-info align-items-stretch	text-light" %>
 			</div>
 		<% end %>
 		</div>

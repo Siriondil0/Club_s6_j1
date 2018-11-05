@@ -109,6 +109,7 @@ RSpec.describe UsersController, type: :controller do
 			expect(flash[:notice]).to be_present
 	  	expect(response).to redirect_to '/users/' +  user.id.to_s + '/edit'
 		end
+		
 		it 'redirect successfull' do
 			user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
 			login(user)
