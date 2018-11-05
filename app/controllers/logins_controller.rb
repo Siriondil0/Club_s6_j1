@@ -5,14 +5,19 @@ class LoginsController < ApplicationController
   end
         
   def create
-    @current_user = User.where(email: params[:user][:email]).first
+    @current_user = User.where(email: params[:user][:email].downcase).first
+    puts @current_user
     if @current_user && @current_user.authenticate(params[:user][:password])
       session[:user_id] = @current_user.id
       redirect_to '/users', flash: {notice: "Vous êtes maintenant connecté"}
-    else
+    elsif @current_user
       session[:user_id] = nil
-      puts "Echec"
-      redirect_to '/logins', flash: {notice: "Échec de la connexion"}
+      puts "Pas bon mot de passe"
+      redirect_to '/logins', flash: {notice: "Le mot de passe est faux, veuillez rééssayer"}
+    else 
+      session[:user_id] = nil
+      puts "Email n'existe pas"
+      redirect_to '/logins', flash: {notice: "Mauvais email, veuillez rééssayer"}
     end
   end
 

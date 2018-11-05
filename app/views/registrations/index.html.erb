@@ -10,44 +10,44 @@
 		<%= form_for @user, url: {action: "create"}, html: {class: "col-md-6"} do |f| %>
 			
 			
-			<div class="col-md-6">
+			<div class="col-md-12">
+				<div class="form-group">
+					<%= f.label "Entrez votre Prénom"%>
+					<%= f.text_field :first_name, placeholder: 'William', class: "form-control" %>
+				</div>			
+			</div> 
+
+			<div class="col-md-12">
 				<div class="form-group">
 					<%= f.label "Entrez votre nom"%>
-					<%= f.text_field :first_name, placeholder: 'Nom', class: "form-control" %>
+					<%= f.text_field :last_name, placeholder: 'Blazkowicz', class: "form-control" %>
 				</div>			
 			</div> 
 
-			<div class="col-md-6">
-				<div class="form-group">
-					<%= f.label "Entrez votre prénom"%>
-					<%= f.text_field :last_name, placeholder: 'Prenom', class: "form-control" %>
-				</div>			
-			</div> 
-
-			<div class="col-md-6">
+			<div class="col-md-12">
 				<div class="form-group">
 					<%= f.label "Entrez votre email" %>
-					<%= f.text_field :email, placeholder: 'Email', class: "form-control" %>
+					<%= f.text_field :email, placeholder: 'William.Blascovitch@killnazies.com', class: "form-control" %>
 					
 				</div>			
 			</div> 
 
-			<div class="col-md-6">
+			<div class="col-md-12">
 				<div class="form-group">
 					<%= f.label "Entrez votre mot de passe" %>
-					<%= f.password_field :password, placeholder: 'Mot de passe', class: "form-control" %>
+					<%= f.password_field :password, placeholder: 'Votre mot de passe', class: "form-control" %>
 				</div>			
 			</div> 
 
-				<div class="col-md-6">
+				<div class="col-md-12">
 				<div class="form-group">
 					<%= f.label "Confirmez votre mot de passe" %>
-					<%= f.password_field :password_confirm, placeholder: 'Confirmation de mot de passe', class: "form-control" %>
+					<%= f.password_field :password_confirm, placeholder: 'Confirmation de mot de passe', class: "form-control align-items-stretch" %>
 				</div>			
 			</div> 
 
 			<div class="col-md-12 form-group  text-light">
-				<%= f.submit "Valider", class: "btn btn-outline-success bg-info col-md-12 align-items-stretch	text-light" %>
+				<%= f.submit "Valider", class: "form-control btn btn-outline-success bg-info align-items-stretch	text-light" %>
 			</div>
 		<% end %>
 		</div>
