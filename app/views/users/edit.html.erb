@@ -1,0 +1,46 @@
+<%= render "layouts/header" %>
+
+<body class="bg-secondary text-light align-items-stretch ">
+	<div class="container-fluid text-warning">
+	<p id="notice"><%= notice %></p>
+	</div>
+	<div class="container-fluid">
+		<h3><br/>Mise à jour de vos données</h3>
+		<div class="form-row">
+
+		<%= form_for @user_connected, url: {action: "update"}, html: {class: "col-md-6"} do |f| %>
+			
+			
+			<div class="col-md-12">
+				<div class="form-group">
+					<%= f.label "Entrez votre Prénom"%>
+					<%= f.text_field :first_name, placeholder: 'William', class: "form-control" %>
+				</div>			
+			</div> 
+
+			<div class="col-md-12">
+				<div class="form-group">
+					<%= f.label "Entrez votre nom"%>
+					<%= f.text_field :last_name, placeholder: 'Blazkowicz', class: "form-control" %>
+				</div>			
+			</div> 
+
+			<div class="col-md-12">
+				<div class="form-group">
+					<%= f.label "Entrez votre email" %>
+					<%= f.text_field :email, placeholder: 'William.Blascovitch@killnazies.com', class: "form-control" %>
+					
+				</div>			
+			</div>
+
+			<div class="col-md-12 form-group  text-light">
+				<%= f.submit "Update", class: "form-control btn btn-outline-success bg-info align-items-stretch	text-light" %>
+			</div>
+		<% end %>
+		</div>
+	 </div>
+</div>
+</div>
+</div>
+
+</body>

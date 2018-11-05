@@ -7,8 +7,9 @@
 
   	<% if @user_connected %>
     	<div class="collapse navbar-collapse" id="navbarNav">
-		<ul class="navbar-nav">
-		<%= link_to "Le club secret :)", '/club', method: :get, class: "nav-link" %>
+			<ul class="navbar-nav">
+			<%= link_to "Le club secret :)", '/club', method: :get, class: "nav-link" %>
+			<%= link_to "Mise à jour des données", '/users/:id', method: :patch, class: "nav-link" %>
     	<%= link_to "Déconnexion", '/users', method: :post, class: "nav-link" %>
 		</ul>
 		</div>
