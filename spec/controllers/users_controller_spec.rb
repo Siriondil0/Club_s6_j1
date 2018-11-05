@@ -4,7 +4,6 @@ RSpec.describe UsersController, type: :controller do
 	render_views
 
 	context "Get index" do
-		
 		it 'return a success response and have register and connect link ' do 
 			get :index
 			expect(response).to be_success
@@ -24,7 +23,6 @@ RSpec.describe UsersController, type: :controller do
 
 	context "Get club" do
 		render_views false
-
 		it 'return a redirect if not connected' do
 			get :fight_club
 			expect(flash[:notice]).to be_present
@@ -40,7 +38,6 @@ RSpec.describe UsersController, type: :controller do
 	end
 
 	context "Get show" do
-
 		it 'redirect if not connected' do
 			user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
 			get :show, params: {id: user.to_param}
@@ -66,11 +63,19 @@ RSpec.describe UsersController, type: :controller do
 			expect(response.body).to include user.last_name
 			expect(response.body).to include user.email
 		end
+		
 	end
-
 	context "Get edit" do
 
+		it 'succeed if connected ' do
+			user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
+			login(user)
+			get :show, params: {id: user.to_param}
+			expect(response).to be_success
+		end
 
+		it ''
+	end
 end
 	
 
