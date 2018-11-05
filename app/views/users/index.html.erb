@@ -11,7 +11,11 @@
   <% if @user_connected %>
     <h1>Bienvenue <%= @user_connected.first_name %> <%= @user_connected.last_name %>!</h1>
     <%= link_to "Le club secret :)", '/club', method: :get, class: "btn btn-lg btn-primary" %>
+<<<<<<< HEAD
 		<%= link_to "Mise à jour des données", '/users/'+session[:user_id].to_s+'/edit', method: :get, class: "nav-link" %>
+=======
+    <%= link_to "Mise à jour des données", '/users/'+session[:user_id].to_s+'/edit', method: :get, class: "btn btn-lg btn-primary" %>
+>>>>>>> 337b86a147cdc1428ed5cb70d7ae364e502b3bc9
     <%= link_to "Déconnexion", '/users', method: :post, class: "btn btn-lg btn-primary" %>
 
   <% else %>    
