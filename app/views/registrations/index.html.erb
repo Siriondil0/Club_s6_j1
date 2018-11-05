@@ -1,6 +1,8 @@
 
 <body class="bg-secondary text-light align-items-stretch ">
+	<div class="container-fluid text-warning">
 	<p id="notice"><%= notice %></p>
+	</div>
 	<div class="container-fluid">
 		<h3><br/>Veuillez vous enregistrer</h3>
 		<div class="form-row">
@@ -11,7 +13,14 @@
 			<div class="col-md-6">
 				<div class="form-group">
 					<%= f.label "Entrez votre nom"%>
-					<%= f.text_field :name, placeholder: 'Nom', class: "form-control" %>
+					<%= f.text_field :first_name, placeholder: 'Nom', class: "form-control" %>
+				</div>			
+			</div> 
+
+			<div class="col-md-6">
+				<div class="form-group">
+					<%= f.label "Entrez votre prénom"%>
+					<%= f.text_field :last_name, placeholder: 'Prenom', class: "form-control" %>
 				</div>			
 			</div> 
 
@@ -23,17 +32,17 @@
 				</div>			
 			</div> 
 
-            <div class="col-md-6">
+			<div class="col-md-6">
 				<div class="form-group">
 					<%= f.label "Entrez votre mot de passe" %>
 					<%= f.password_field :password, placeholder: 'Mot de passe', class: "form-control" %>
 				</div>			
 			</div> 
 
-                <div class="col-md-6">
+				<div class="col-md-6">
 				<div class="form-group">
 					<%= f.label "Confirmez votre mot de passe" %>
-					<%= f.password_field :password, placeholder: 'Confirmation de mot de passe', class: "form-control" %>
+					<%= f.password_field :password_confirm, placeholder: 'Confirmation de mot de passe', class: "form-control" %>
 				</div>			
 			</div> 
 
@@ -43,4 +52,8 @@
 		<% end %>
 		</div>
 	 </div>
+</div>
+</div>
+</div>
+
 </body>
