@@ -33,7 +33,6 @@ Donc pour tester en local:
 
 * :heavy_dollar_sign: Guillaume Pichot   slack/  @Guillaume
 * :heavy_dollar_sign: Hai-Dang Ha-Thuc  slack/  @Hai-Dang 
-* :heavy_dollar_sign: Fayçal Meghzili   slack/  @Fays  
 
 
      :end: :end: :end: :end: :end: :end: :end: :end: :end:
