@@ -23,7 +23,7 @@ Tester les views :
 :exclamation: Nous n'avons pas utilisé MiniTests mais Rspec :exclamation:
 
 ## Lien Heroku ::jack_o_lantern:
-[Lien Gossip-project sur Heroku à mettre à jour](https...)
+[Lien Club-project sur Heroku à mettre à jour](https...)
 
 ## Projet de groupe :tea: :
 
