@@ -18,16 +18,14 @@ RSpec.describe LoginsController, type: :controller do
     end
   end
 
-  context "POST #create" do
-  it 'returns an error due to invalid passwod' do
-    user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
-    post :create , params: {"user"=> { "email"=>'toto@mail.com',"password"=> "abcdef" }}
-    expect(response).to redirect_to '/logins'
-    expect(flash[:notice]).to be_present
+    it 'returns an error due to invalid passwod' do
+      user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
+      post :create , params: {"user"=> { "email"=>'toto@mail.com',"password"=> "abcdef" }}
+      expect(response).to redirect_to '/logins'
+      expect(flash[:notice]).to be_present
+    end
   end
-end
 
-  context "POST #create" do
     it 'returns an error due to wrong email' do
       user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
       post :create , params: {"user"=> { "email"=>'tata',"password"=> "01234" }}

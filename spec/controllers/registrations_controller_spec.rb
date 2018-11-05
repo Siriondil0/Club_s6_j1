@@ -17,11 +17,10 @@ RSpec.describe RegistrationsController, type: :controller do
     end
   end
 
-  context "POST #create" do
-  it 'creates user with empty field' do
-    post :create, params: { "user"=> { "first_name" => "    ", "last_name" => "Last", "email" => "first.last@example.com", "password" => "AZERTY12345"} }
-    expect(response).to redirect_to '/registrations'
+    it 'creates user with empty field' do
+      post :create, params: { "user"=> { "first_name" => "    ", "last_name" => "Last", "email" => "first.last@example.com", "password" => "AZERTY12345"} }
+      expect(response).to redirect_to '/registrations'
+    end
   end
-end
 
 end
