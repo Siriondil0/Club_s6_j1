@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<body class="bg-secondary text-light d-flex align-items-stretch flex-wrap">
+
+<div class="container-fluid align-items-stretch bg-secondary">
+<div class= "text-light  d-flex align-content-end flex-wrap ">
+<div class="center jumbotron bg-secondary">  
+
+	<h2>Bienvenue <%= @current_user.name %> !</h2>
+	<br/>
+	<h3>Tout d'abord, petit rappel des règles:</h3>
+	<h4> <ul>
+		<li>La première règle du Fight Club est : il est interdit de parler du Fight Club. </li>
+		<li>La seconde règle du Fight Club est : il est interdit de parler du Fight Club. </li>
+		<li>Troisième règle du Fight Club : quelqu'un crie stop, quelqu'un s'écroule ou n'en peut plus, le combat est terminé. </li>
+		<li>Quatrième règle : seulement deux hommes par combat. Cinquième règle : un seul combat à la fois, messieurs. </li>
+		<li>Sixième règle : pas de chemise, ni de chaussures. </li>
+		<li>Septième règle : les combats continueront aussi longtemps que nécessaire. </li>
+		<li>Et huitième et dernière règle : si c'est votre première soirée au Fight Club, vous devez vous battre.</li>
+		
+	</ul></h4>
+	<br/>
+	<h3> Et ici, les membres de notre club</h3>
+	<table class="table">
+	<thead>
+	  <tr>
+	  	<td>ID</td>
+			<td>Prénom</td>
+			<td>Nom</td>            
+			<td>Mail</td>
+		</tr>
+	</thead>
+	<tbody>
+	<% @user.each do |user| %>
+	  <tr>
+		  <td><%= user.id %></td>
+		  <td><%= user.last_name %></td>
+		  <td><%= user.first_name %></td>
+		  <td><%= user.email %></td>
+	  </tr>
+  <% end %>
+
+<%= link_to "Retourner à l'accueil", '/users', method: :get, class: "btn btn-lg btn-primary" %>

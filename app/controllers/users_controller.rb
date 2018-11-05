@@ -7,9 +7,9 @@ class UsersController < ApplicationController
 		redirect_to '/users'
 	end
 
-	def secret 
+	def fight_club 
 		unless session[:user_id]
-			redirect_to '/users', flash: {notice: "Accès interdit au secret sans être connecté"}
+			redirect_to '/users', flash: {notice: "Accès interdit au club sans être connecté"}
 		end
 	end
 
