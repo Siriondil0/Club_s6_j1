@@ -23,5 +23,27 @@ class UsersController < ApplicationController
 				redirect_to '/users', flash: {notice: "Accès interdit au profil quand non conecté"}
 			end
 		end
-  end
+	end
+	
+	def edit 
+		@current_user = User.find(params[:id])
+		unless session[:user_id] == @current_user.id
+			if session[:user_id]
+				redirect_to '/club', flash: {notice: "Accès interdit à l'édition du profil des autres"}
+			else
+				redirect_to '/users', flash: {notice: "Accès interdit au profil quand non connecté"}
+			end 
+		end
+	end
+
+	def update
+		@current_user = User.assign_attributes(first_name: params[:user][:first_name], last_name: params[:user][:last_name], email: params[:user][:email])
+		if @current_user
+			@current_user.save
+			redirect_to '/club'
+		else
+			flash[:notice]= "Accès interdit au profil quand non connecté"
+			redirect_back(fallback_location: root_path) 
+		end
+	end
 end
