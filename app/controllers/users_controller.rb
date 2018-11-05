@@ -33,13 +33,14 @@ class UsersController < ApplicationController
 	end
 
 	def update
-		@current_user = User.assign_attributes(first_name: params[:user][:first_name], last_name: params[:user][:last_name], email: params[:user][:email])
+		@current_user = User.find(params[:id])
+		@current_user = @current_user.update_attributes(first_name: params[:user][:first_name], last_name: params[:user][:last_name], email: params[:user][:email])
 		if @current_user
-			@current_user.save
+			flash[:notice]= "Vous avez bien modifié votre profil"
 			redirect_to '/club'
 		else
 			flash[:notice]= "Accès interdit au profil quand non connecté"
-			redirect_back(fallback_location: root_path) 
+			redirect_to '/users/' + params[:id].to_s + '/edit' 
 		end
 	end
 end

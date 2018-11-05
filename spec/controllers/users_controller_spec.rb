@@ -50,8 +50,7 @@ RSpec.describe UsersController, type: :controller do
 			user2 = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto2@mail.com', password: "01234")
 			login(user)
 			get :show, params: {id: user2.to_param}
-			expect(flash[:notice]).to be_present
-			expect(response).to redirect_to '/users'
+			expect(response).to be_successful
 		end
 		
 		it 'succeed and has user spec if connected with right user' do
@@ -85,8 +84,7 @@ RSpec.describe UsersController, type: :controller do
 		it 'redirect if not connected to right user' do
 			user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
 			user2 = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto2@mail.com', password: "01234")
-			login(user)
-			puts session[:user_id]	
+			login(user)	
 			get :edit, params: {id: user2.to_param}
 			expect(flash[:notice]).to be_present
 			expect(response).to redirect_to '/club'
@@ -98,26 +96,25 @@ RSpec.describe UsersController, type: :controller do
 		it 'redirect if empty field' do
 			user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
 			login(user)
-			puts user
-			post :edit, params: {id: user.to_param, "user"=> { "first_name" => "     ", last_name: 'Toto', email: 'toto@mail.com' }}
+			patch :update, params: {id: user.to_param, "user"=> { "first_name" => "     ", last_name: 'Toto', email: 'toto@mail.com' }}
 			expect(flash[:notice]).to be_present
-      		expect(response).to be_successful
+	  		expect(response).to redirect_to '/users/' +  user.id.to_s + '/edit'
 		end
 
 		it 'redirect if same email' do
 			user2 = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto2@mail.com', password: "01234")
 			user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
 			login(user)
-			post :edit, params: {id: user.to_param, "user"=> { "first_name" => "toto", last_name: 'Toto', email: 'toto2@mail.com' }}
+			patch :update, params: {id: user.to_param, "user"=> { "first_name" => "toto", last_name: 'Toto', email: 'toto2@mail.com' }}
 			expect(flash[:notice]).to be_present
-      expect(response).to be_successful
+	  	expect(response).to redirect_to '/users/' +  user.id.to_s + '/edit'
 		end
 		it 'redirect successfull' do
 			user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
 			login(user)
-			post :edit, params: {id: user.to_param, "user"=> { "first_name" => "toto", last_name: 'Toto', email: 'toto2@mail.com' }}
+			patch :update, params: {id: user.to_param, "user"=> { "first_name" => "toto", last_name: 'Toto', email: 'toto2@mail.com' }}
 			expect(flash[:notice]).to be_present
-      expect(response).to be_successful
+	  	expect(response).to redirect_to '/club'
 		end
 
 	end
