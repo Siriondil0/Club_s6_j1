@@ -35,8 +35,8 @@
 	<% @user.each do |user| %>
 	  <tr>
 		  <td><%= user.id %></td>
+		  <td><%= user.first_name  %></td>
 		  <td><%= user.last_name %></td>
-		  <td><%= user.first_name %></td>
 		  <td><%= user.email %></td>
 		  <td><strong><%= link_to "Fiche de " + user.first_name + " " + user.last_name, '/users/' + user.id.to_s, method: :get%> </strong></td>
 	  </tr>
