@@ -1,6 +1,8 @@
 # THP Semaine 6 Jour 1
+
+Exercice provenant de [The Hacking Project](https://www.thehackingproject.org/)
                          
-## Club privé : :jack_o_lantern:
+## Club privé : :cool:
 
 ### Enoncé
 
