@@ -11,7 +11,7 @@ RSpec.describe UsersController, type: :controller do
 	context "Get club" do
 		it 'return a success response' do
 			get :fight_club
-			expect(response).to be_success
+			expect(response).to redirect_to '/users'
 		end
 	end
 	
