@@ -98,9 +98,10 @@ RSpec.describe UsersController, type: :controller do
 		it 'redirect if empty field' do
 			user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
 			login(user)
+			puts user
 			post :edit, params: {id: user.to_param, "user"=> { "first_name" => "     ", last_name: 'Toto', email: 'toto@mail.com' }}
 			expect(flash[:notice]).to be_present
-      expect(response).to be_successful
+      		expect(response).to be_successful
 		end
 
 		it 'redirect if same email' do

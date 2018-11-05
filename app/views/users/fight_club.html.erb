@@ -28,6 +28,7 @@
 			<td>Prénom</td>
 			<td>Nom</td>            
 			<td>Mail</td>
+			<td>Lien vers le profil</td>
 		</tr>
 	</thead>
 	<tbody>
@@ -37,6 +38,7 @@
 		  <td><%= user.last_name %></td>
 		  <td><%= user.first_name %></td>
 		  <td><%= user.email %></td>
+		  <td><strong><%= link_to "Fiche de " + user.first_name + " " + user.last_name, '/users/' + user.id.to_s, method: :get%> </strong></td>
 	  </tr>
   <% end %>
 

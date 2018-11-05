@@ -7,12 +7,19 @@
 <div class= "text-light  d-flex align-content-end flex-wrap ">
 <div class="center jumbotron bg-secondary">     
   <h2> Profil de l'utilisateur <%= @current_user.id%>
+  <br/>
     <ul>
       <li>Prénom : <%= @current_user.first_name %></li>
       <li>Nom : <%= @current_user.last_name%></li>
       <li>Mail : <%= @current_user.email%></li>
     <ul>
+    <br/>
+     
   </h2>
+  <% if @user_connected.id ==@current_user.id %>
+    <%= link_to "Clique ici pour modifier ton profil", '/users/' + @user_connected.id.to_s + '/edit', method: :get, class: "btn btn-lg btn-primary" %>
+  <%end%> 
+
 </div>
 </div>
 </div>
