@@ -9,6 +9,11 @@
 <div class= "text-light  d-flex align-content-end flex-wrap ">
 <div class="center jumbotron bg-secondary">       
   <% if @user_connected %>
+    <div class= "text-light  d-flex align-content-end flex-wrap ">
+	  <div class="center jumbotron bg-secondary">  
+	 	  <%=image_tag("no_photo.png", alt: "Example Image")%>
+	  </div>
+	  </div>
     <h1>Bienvenue <%= @user_connected.first_name %> <%= @user_connected.last_name %>!</h1>
     <br/>
     <%= link_to "Le club secret :)", '/club', method: :get, class: "btn btn-lg btn-primary" %>
@@ -18,11 +23,20 @@
   <% else %>    
     <h1>Bienvenue visiteur anonyme!</h1>
     <br/>
-    <h3>Enregistre ou connecte-toi pour accéder au club!</h3>
+    <h3>Enregistre ou connecte-toi pour accéder au club secret!</h3>
     <br/>
     <%= link_to "Enregistre-toi !", registrations_path, class: "btn btn-lg btn-primary" %>
     <%= link_to "Connecte-toi !", logins_path, class: "btn btn-lg btn-primary" %>
+    <br/>
+    <div class= "container container-table" >
+	  <div class="col-xs-offset-4 vertical-center-row">  
+    <br/>
+	 	  <%=image_tag("index.png", alt: "Example Image", size: "450x250")%>
+	  </div>
+	  </div>
   <% end %>  
+
+  
 </div>
 </div>
 </div>
