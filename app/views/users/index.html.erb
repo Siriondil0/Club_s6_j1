@@ -1,0 +1,24 @@
+
+<body class="bg-secondary text-light d-flex align-items-stretch flex-wrap">
+<p id="notice"><%= notice %></p>
+<div class="container-fluid align-items-stretch bg-secondary">
+<div class= "text-light  d-flex align-content-end flex-wrap ">
+<div class="center jumbotron bg-secondary">       
+  <% if @current_user %>
+    <h1>Bienvenue <%= @current_user.name %> !</h1>
+    <%= link_to "Le secret :)", '/secret', method: :get, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Déconnexion", '/users', method: :post, class: "btn btn-lg btn-primary" %>
+
+  <% else %>    
+    <h1>Bienvenue visiteur anonyme!</h1>
+      <h3>
+        Ici, tu peux retrouver les moussaillons 🎓
+      </h3>
+    <%= link_to "Enregistre-toi !", registrations_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Connecte-toi !", logins_path, class: "btn btn-lg btn-primary" %>
+  <% end %>  
+</div>
+</div>
+</div>
+
+</body>
