@@ -1,25 +1,33 @@
-# README
+# THP Semaine 6 Jour 1
+                         
+## Club privé : :jack_o_lantern:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Enoncé
 
-Things you may want to cover:
+Le site sera un club privé. La page d'accueil affichera un lien vers la page du club, puis on pourra trouver une navbar pour permettre d'afficher soit son profil si l'on est login, soit les liens de login et register si l'on n'est pas login.
 
-* Ruby version
+### Tests
 
-* System dependencies
+Tester les views :
 
-* Configuration
+    1. Il faut tester la page d'accueil, et faire en sorte qu'elle affiche les bons liens, en fonction si la personne est connectée ou non :white_check_mark:
+    2. Ensuite tu vas tester la page d'inscription, qui doit évidemment retourner une erreur si la personne n'a pas rentré les bons champs (email en double, paramètre manquant) :white_check_mark:
+    3. Il faut tester la page de login, qui doit login la personne si elle rentre un bon ID, et lui renvoyer un message d'erreur si elle ne renvoie pas un bon paramètre :white_check_mark:
+    4. Il faut tester la navbar, qui doit afficher les bons liens :white_check_mark:
+    5. Il faut tester la page du club, qui ne doit être accessible qu'aux personnes login. La page doit renvoyer la liste des personnes inscrites au site, donc il faut tester cela :white_check_mark:
+    6. Implémentation d'une feature en TDD :white_check_mark:
+    7. Implémentation d'une autre feature :white_check_mark:
+    
+:exclamation: Nous n'avons pas utilisé MiniTests mais Rspec :exclamation:
 
-* Database creation
+## Lien Heroku ::jack_o_lantern:
+[Lien Gossip-project sur Heroku à mettre à jour](https...)
 
-* Database initialization
+## Projet de groupe :tea: :
 
-* How to run the test suite
+* :heavy_dollar_sign: Guillaume Pichot   slack/  @Guillaume
+* :heavy_dollar_sign: Hai-Dang Ha-Thuc  slack/  @Hai-Dang 
+* :heavy_dollar_sign: Fayçal Meghzili   slack/  @Fays  
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
-# Club_s6_j1
+     :end: :end: :end: :end: :end: :end: :end: :end: :end:
