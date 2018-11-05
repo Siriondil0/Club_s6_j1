@@ -5,9 +5,10 @@
 </div>
 <div class="container-fluid align-items-stretch bg-secondary">
 <div class= "text-light  d-flex align-content-end flex-wrap ">
-<div class="center jumbotron bg-secondary">     
-  <h2> Profil de l'utilisateur <%= @current_user.id%>
+<div class="center jumbotron align-items-center bg-secondary">     
+  <h2> Profil de <%= @current_user.first_name %>
   <br/>
+  <%=image_tag("img-fightclub.png", alt: "Example Image", size: "450x250")%>
     <ul>
       <li>Prénom : <%= @current_user.first_name %></li>
       <li>Nom : <%= @current_user.last_name%></li>

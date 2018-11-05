@@ -9,7 +9,7 @@ class LoginsController < ApplicationController
     puts @current_user
     if @current_user && @current_user.authenticate(params[:user][:password])
       session[:user_id] = @current_user.id
-      redirect_to '/users', flash: {notice: "Vous êtes maintenant connecté"}
+      redirect_to '/club', flash: {notice: "Vous êtes maintenant connecté"}
     elsif @current_user
       session[:user_id] = nil
       puts "Pas bon mot de passe"

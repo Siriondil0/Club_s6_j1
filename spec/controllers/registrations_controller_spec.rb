@@ -4,9 +4,9 @@ RSpec.describe RegistrationsController, type: :controller do
   
   context "GET #index" do
     it 'returns a success response' do 
-	  get :index
-	  expect(response).to be_successful
-	end
+	    get :index
+	    expect(response).to be_successful
+	  end
   end
 
   context "POST #create" do
