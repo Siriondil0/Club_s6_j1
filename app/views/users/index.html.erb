@@ -10,15 +10,16 @@
 <div class="center jumbotron bg-secondary">       
   <% if @user_connected %>
     <h1>Bienvenue <%= @user_connected.first_name %> <%= @user_connected.last_name %>!</h1>
+    <br/>
     <%= link_to "Le club secret :)", '/club', method: :get, class: "btn btn-lg btn-primary" %>
 		<%= link_to "Mise à jour des données", '/users/'+session[:user_id].to_s+'/edit', method: :get, class: "btn btn-lg btn-primary" %>
     <%= link_to "Déconnexion", '/users', method: :post, class: "btn btn-lg btn-primary" %>
 
   <% else %>    
     <h1>Bienvenue visiteur anonyme!</h1>
-      <h3>
-        Enregistre ou connecte-toi pour accéder au club!
-      </h3>
+    <br/>
+    <h3>Enregistre ou connecte-toi pour accéder au club!</h3>
+    <br/>
     <%= link_to "Enregistre-toi !", registrations_path, class: "btn btn-lg btn-primary" %>
     <%= link_to "Connecte-toi !", logins_path, class: "btn btn-lg btn-primary" %>
   <% end %>  
