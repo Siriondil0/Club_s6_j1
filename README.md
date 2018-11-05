@@ -23,7 +23,7 @@ Tester les views :
 :exclamation: Nous n'avons pas utilisé MiniTests mais Rspec :exclamation:
 
 ## Lien Heroku :
-[Lien Club-project sur Heroku à mettre à jour](https...)
+[Lien Club-project sur Heroku](https://fight-club-thp.herokuapp.com/)
 
 ## Projet de groupe :tea: :
 
