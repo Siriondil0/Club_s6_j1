@@ -21,6 +21,10 @@ Tester les views :
 * Implémentation d'une autre feature :white_check_mark:
     
 :exclamation: Nous n'avons pas utilisé MiniTests mais Rspec :exclamation:
+Donc pour tester en local:
+* Commence par un bundle install
+* Fait ensuite un rails db:create puis db:migrate
+* Entre alors rspec
 
 ## Lien Heroku :
 [Lien Club-project sur Heroku](https://fight-club-thp.herokuapp.com/)
