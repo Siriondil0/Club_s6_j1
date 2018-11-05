@@ -5,28 +5,28 @@
 	<p id="notice"><%= notice %></p>
 	</div>
 	<div class="container-fluid">
-		<h3><br/>Mise à jour de vos données</h3>
+		<h3><br/>Mise à jour de tes données</h3>
 		<div class="form-row">
 
 		<%= form_for @user_connected, url: {action: "update"}, html: {class: "col-md-6"} do |f| %>
 			
 			<div class="col-md-12">
 				<div class="form-group">
-					<%= f.label "Entrez votre Prénom"%>
+					<%= f.label "Entrez ton Prénom"%>
 					<%= f.text_field :first_name, placeholder: 'William', class: "form-control" %>
 				</div>			
 			</div> 
 
 			<div class="col-md-12">
 				<div class="form-group">
-					<%= f.label "Entrez votre nom"%>
+					<%= f.label "Entrez ton nom"%>
 					<%= f.text_field :last_name, placeholder: 'Blazkowicz', class: "form-control" %>
 				</div>			
 			</div> 
 
 			<div class="col-md-12">
 				<div class="form-group">
-					<%= f.label "Entrez votre email" %>
+					<%= f.label "Entrez ton email" %>
 					<%= f.text_field :email, placeholder: 'William.Blascovitch@killnazies.com', class: "form-control" %>
 					
 				</div>			
