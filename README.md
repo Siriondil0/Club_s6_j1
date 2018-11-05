@@ -1,25 +1,35 @@
-# README
+# THP Semaine 6 Jour 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Exercice provenant de [The Hacking Project](https://www.thehackingproject.org/)
+                         
+## Club privé : :cool:
 
-Things you may want to cover:
+### Enoncé
 
-* Ruby version
+Le site sera un club privé. La page d'accueil affichera un lien vers la page du club, puis on pourra trouver une navbar pour permettre d'afficher soit son profil si l'on est login, soit les liens de login et register si l'on n'est pas login.
 
-* System dependencies
+### Tests
 
-* Configuration
+Tester les views :
 
-* Database creation
+* Il faut tester la page d'accueil, et faire en sorte qu'elle affiche les bons liens, en fonction si la personne est connectée ou non :white_check_mark:
+* Ensuite tu vas tester la page d'inscription, qui doit évidemment retourner une erreur si la personne n'a pas rentré les bons champs (email en double, paramètre manquant) :white_check_mark:
+* Il faut tester la page de login, qui doit login la personne si elle rentre un bon ID, et lui renvoyer un message d'erreur si elle ne renvoie pas un bon paramètre :white_check_mark:
+* Il faut tester la navbar, qui doit afficher les bons liens :white_check_mark:
+* Il faut tester la page du club, qui ne doit être accessible qu'aux personnes login. La page doit renvoyer la liste des personnes inscrites au site, donc il faut tester cela :white_check_mark:
+* Implémentation d'une feature en TDD :white_check_mark:
+* Implémentation d'une autre feature :white_check_mark:
+    
+:exclamation: Nous n'avons pas utilisé MiniTests mais Rspec :exclamation:
 
-* Database initialization
+## Lien Heroku :
+[Lien Club-project sur Heroku à mettre à jour](https...)
 
-* How to run the test suite
+## Projet de groupe :tea: :
 
-* Services (job queues, cache servers, search engines, etc.)
+* :heavy_dollar_sign: Guillaume Pichot   slack/  @Guillaume
+* :heavy_dollar_sign: Hai-Dang Ha-Thuc  slack/  @Hai-Dang 
+* :heavy_dollar_sign: Fayçal Meghzili   slack/  @Fays  
 
-* Deployment instructions
 
-* ...
-# Club_s6_j1
+     :end: :end: :end: :end: :end: :end: :end: :end: :end:
