@@ -15,5 +15,9 @@ class UsersController < ApplicationController
 	end
 
 	def show
+		@current_user = User.find(params[:id])
+		unless @current_user.id == session[:user_id]
+			redirect_to '/users', flash: {notice: "Accès interdit au profil des autres"}
+		end
   end
 end

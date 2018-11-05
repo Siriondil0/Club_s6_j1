@@ -1,3 +1,19 @@
-  <% if flash[:notice] %>
-    <div class="notice"><%= flash[:notice] %></div>
-  <% end %>
+<%= render "layouts/header" %>
+<body class="bg-secondary text-light d-flex align-items-stretch flex-wrap">
+<div class="container-fluid text-warning">
+	<p id="notice"><%= notice %></p>
+</div>
+<div class="container-fluid align-items-stretch bg-secondary">
+<div class= "text-light  d-flex align-content-end flex-wrap ">
+<div class="center jumbotron bg-secondary">     
+  <h2> Profil de l'utilisateur <%= @current_user.id%>
+    <ul>
+      <li>Prénom : <%= @current_user.first_name %></li>
+      <li>Nom : <%= @current_user.last_name%></li>
+      <li>Mail : <%= @current_user.email%></li>
+    <ul>
+  </h2>
+</div>
+</div>
+</div>
+</body>

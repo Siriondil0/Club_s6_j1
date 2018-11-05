@@ -8,8 +8,8 @@
 <div class="container-fluid align-items-stretch bg-secondary">
 <div class= "text-light  d-flex align-content-end flex-wrap ">
 <div class="center jumbotron bg-secondary">       
-  <% if @current_user %>
-    <h1>Bienvenue <%= @current_user.first_name %> <%= @current_user.last_name %>!</h1>
+  <% if @user_connected %>
+    <h1>Bienvenue <%= @user_connected.first_name %> <%= @user_connected.last_name %>!</h1>
     <%= link_to "Le club secret :)", '/club', method: :get, class: "btn btn-lg btn-primary" %>
     <%= link_to "Déconnexion", '/users', method: :post, class: "btn btn-lg btn-primary" %>
 
