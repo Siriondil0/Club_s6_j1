@@ -16,7 +16,6 @@ RSpec.describe LoginsController, type: :controller do
       expect(response).to redirect_to '/users'
       expect(flash[:notice]).to be_present
     end
-  end
 
     it 'returns an error due to invalid password' do
       user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
@@ -24,7 +23,6 @@ RSpec.describe LoginsController, type: :controller do
       expect(response).to redirect_to '/logins'
       expect(flash[:notice]).to be_present
     end
-  end
 
     it 'returns an error due to wrong email' do
       user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
