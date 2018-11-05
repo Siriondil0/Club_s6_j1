@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/spec/controllers/logins_controller_spec.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/spec/controllers/logins_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/spec/rails_helper.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -71,14 +71,14 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/environment.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/application.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/application.rb": [
         1,
         null,
         1,
@@ -99,13 +99,13 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/boot.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/environments/test.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/environments/test.rb": [
         1,
         null,
         null,
@@ -153,7 +153,7 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/initializers/application_controller_renderer.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -163,7 +163,7 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/initializers/assets.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -179,7 +179,7 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/initializers/backtrace_silencers.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -188,7 +188,7 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/initializers/content_security_policy.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -215,20 +215,20 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/initializers/cookies_serializer.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/initializers/filter_parameter_logging.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/initializers/inflections.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -246,13 +246,13 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/initializers/mime_types.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/initializers/wrap_parameters.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -268,7 +268,7 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/config/routes.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/config/routes.rb": [
         1,
         1,
         1,
@@ -278,7 +278,7 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/app/helpers/application_helper.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/app/helpers/application_helper.rb": [
         1,
         1,
         0,
@@ -290,19 +290,19 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/app/helpers/logins_helper.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/app/helpers/logins_helper.rb": [
         1,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/app/helpers/registrations_helper.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/app/helpers/registrations_helper.rb": [
         1,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/app/helpers/users_helper.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/app/controllers/logins_controller.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/app/controllers/logins_controller.rb": [
         1,
         null,
         1,
@@ -334,69 +334,33 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/app/controllers/application_controller.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/app/controllers/application_controller.rb": [
         1,
         1,
         1,
         1,
         1,
         6,
+<<<<<<< HEAD
         3,
+=======
+        0,
+>>>>>>> refs/remotes/origin/master
         null,
         null,
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/spec/controllers/registrations_controller_spec.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/spec/controllers/registrations_controller_spec.rb": [
         1,
         null,
         1,
         null,
-        null
-      ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/app/controllers/registrations_controller.rb": [
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/spec/controllers/users_controller_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
         1,
         1,
         1,
         1,
         null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null,
         null,
         1,
@@ -411,36 +375,98 @@
         1,
         1,
         1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
         null,
         null,
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/app/controllers/users_controller.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/app/controllers/registrations_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        2,
+        0,
+        0,
+        null,
+        2,
+        2,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/spec/controllers/users_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/app/controllers/users_controller.rb": [
         1,
         1,
         null,
@@ -466,10 +492,18 @@
         1,
         null,
         null,
+<<<<<<< HEAD
+=======
+        1,
+        1,
+        1,
+        1,
+        null,
+>>>>>>> refs/remotes/origin/master
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/spec/models/user_spec.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -515,9 +549,13 @@
         null,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/app/models/user.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/app/models/user.rb": [
         1,
+<<<<<<< HEAD
         8,
+=======
+        5,
+>>>>>>> refs/remotes/origin/master
         1,
         1,
         1,
@@ -527,12 +565,16 @@
         1,
         null
       ],
-      "/home/guillaume/Documents/THP/Semaine6/Club_s6_j1/app/models/application_record.rb": [
+      "/Users/Hai-Dang/Documents/THP/Semaine6/S6J1/Club_s6_j1/app/models/application_record.rb": [
         1,
         1,
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1541430206
+=======
+    "timestamp": 1541427326
+>>>>>>> refs/remotes/origin/master
   }
 }
