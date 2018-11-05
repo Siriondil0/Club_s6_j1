@@ -18,6 +18,23 @@ RSpec.describe UsersController, type: :controller do
 			expect(response).to be_successful
 			expect(response.body).to have_link('Le club secret :)')
 			expect(response.body).to have_link('Déconnexion')
+			expect(response.body).to have_link('Mise à jour')
+		end
+	end
+
+	context "Get navbar" do
+		it 'return the good links when not connected' do
+			get :index
+			expect(response.body).to have_link('Enregistrement')
+			expect(response.body).to have_link('Connexion')
+		end
+
+		it 'return the good links when connected' do
+			user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
+			login(user)
+			get :index
+			expect(response.body).to have_link('Le club :)')
+			expect(response.body).to have_link('MaJ des données')
 		end
 	end
 

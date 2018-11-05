@@ -8,8 +8,8 @@
   	<% if @user_connected %>
     	<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
-			<%= link_to "Le club secret :)", '/club', method: :get, class: "nav-link" %>
-			<%= link_to "Mise à jour des données", '/users/'+session[:user_id].to_s+'/edit', method: :get, class: "nav-link" %>
+			<%= link_to "Le club :)", '/club', method: :get, class: "nav-link" %>
+			<%= link_to "MaJ des données", '/users/'+session[:user_id].to_s+'/edit', method: :get, class: "nav-link" %>
     	<%= link_to "Déconnexion", '/users', method: :post, class: "nav-link" %>
 		</ul>
 		</div>
@@ -17,8 +17,8 @@
     <% else %>
 		<div class="collapse navbar-collapse" id="navbarNav">
 		<ul class="navbar-nav">
-    	<%= link_to "Enregistre-toi !", registrations_path, class: "nav-link" %>
-    	<%= link_to "Connecte-toi !", logins_path, class: "nav-link" %>
+    	<%= link_to "Enregistrement", registrations_path, class: "nav-link" %>
+    	<%= link_to "Connexion", logins_path, class: "nav-link" %>
 		</ul>
 		</div>
 
