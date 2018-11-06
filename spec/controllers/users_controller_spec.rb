@@ -39,7 +39,6 @@ RSpec.describe UsersController, type: :controller do
 	end
 
 	context "Get club" do
-		render_views false
 		it 'return a redirect if not connected' do
 			get :fight_club
 			expect(flash[:notice]).to be_present
@@ -52,6 +51,19 @@ RSpec.describe UsersController, type: :controller do
 			get :fight_club
 			expect(response).to be_successful
 		end	
+		it 'check presences of users' do
+			user = User.create!(first_name: 'toto', last_name: 'Toto', email: 'toto@mail.com', password: "01234")
+			user2 = User.create!(first_name: 'loro', last_name: 'Loto', email: 'toto2@mail.com', password: "01234")
+			login(user)
+			get :fight_club
+			expect(response).to be_successful
+			expect(response.body).to include user.first_name
+			expect(response.body).to include user.last_name
+			expect(response.body).to include user.email
+			expect(response.body).to include user2.first_name
+			expect(response.body).to include user2.last_name
+			expect(response.body).to include user2.email
+		end
 	end
 
 	context "Get show" do
